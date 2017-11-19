@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Suggestion</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" lang="vi-VN" />
+    <style>
+        body {
+            max-width: 1000px;
+            margin: 0 auto;
+            /*padding: 0;*/
+            font-family: "Segoe UI Webfont", "Ebrima", "Narimala UI";
+            font-size: 15px;
+        }
+
+        .main {
+            width: 650px;
+        }
+
+        .text_header {
+            font-size: 34px;
+            line-height: 10px;
+            font-weight: lighter;
+        }
+
+        .form_control {
+            border-style: solid;
+            border-width: 1px;
+            border-color: gray;
+        }
+
+        .new_mail {
+            color: #0078d7;
+            font-size: 12px;
+        }
+
+        .form_button {
+            background-color: #0078d7;
+            border-color: #0078d7;
+            color: #ffffff;
+        }
+
+        #single {
+            width: 300px;
+            height: 20px;
+        }
+
+        #double {
+            width: 606px;
+            height: 20px;
+        }
+
+        a {
+            text-decoration: none;           
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p class="text_header">Create an account</p>
+    <div>
+        <form>
+            <table width="600">
+                <tr>
+                    <td>First name</td>
+                    <td>Last name</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="single" class="form_control" type="text" value="" />
+                    </td>
+                    <td>
+                        <input id="single" class="form_control" type="text" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>User name</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="double" class="form_control" type="text" placeholder="someone@example.com" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="new_mail">Get a new email address</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country/Region</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select class="form_control" id="double" style="height:23px">
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Birthdate</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select class="form_control" style="height:23px; width:203px">
+                            <option value="month">Month</option>
+                            <option value="month">January</option>
+                            <option value="month">Ferbuary</option>
+                            <option value="month">March</option>
+                            <option value="month">April</option>
+                            <option value="month">May</option>
+                            <option value="month">June</option>
+                            <option value="month">July</option>
+                            <option value="month">August</option>
+                            <option value="month">September</option>
+                            <option value="month">October</option>
+                            <option value="month">November</option>
+                            <option value="month">December</option>
+                        </select>
+                        <select class="form_control" style="height:23px; width:203px">
+                            <option value="date">Date</option>
+                            <option value="date">1</option>
+                            <option value="date">...</option>
+                            <option value="date">31</option>
+                        </select>
+                        <select class="form_control" style="height:23px; width:192px">
+                            <option value="year">Year</option>
+                            <option value="year">1997</option>
+                            <option value="year">1996</option>
+                            <option value="year">1995</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="double" class="form_control" type="text" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px">8-character minimum; case sensitive</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" />Send me promotional offers from Microsoft. You can unsubcribe at any time.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-wrap:normal">
+                        Click Create account to agree to the <a href="#">Microsoft Services Agreement</a> and <a href="#">privacy and coookies statement.</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" class="form_button" value="Create account" id="double" style="height:30px" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

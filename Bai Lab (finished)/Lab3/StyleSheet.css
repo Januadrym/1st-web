@@ -1,0 +1,48 @@
+﻿body {
+    margin: 0px auto;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+div {
+    float: left;
+}
+
+.header {
+    width: 940px;
+    height: 200px;
+    background: url(images/header.jpg);
+    margin-bottom: 10px;
+}
+
+.bigmain {
+    width: 940px;
+    margin-bottom: 10px;
+}
+
+.nav {
+    width: 190px;
+    height: 350px;
+    background-color: lightblue;
+    margin-right: 10px;
+}
+
+.main {
+    width: 738px;
+    height: 400px;
+    border: 1px solid;
+}
+
+.footer {
+    width: 940px;
+    height: 400px;
+    background-color: yellowgreen;
+}
+
+p {
+    font-family: Tahoma;
+    text-transform: uppercase;
+    color:  darkgreen;
+    font-weight: 900;
+}
