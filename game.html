@@ -11,15 +11,14 @@
     <link rel="shortcut icon" href="images/favicon.png" />
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
 
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/web build.json", {onProgress: UnityProgress});
-    </script>
+    
   </head>
 
   <body>
     <div class="webgl-content">
+      <div style="margin-bottom: 20px;">
+        <h3>Somes game I made while learning Unity</h3>
+      </div>
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
 
       <div class="footer">
@@ -27,8 +26,7 @@
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">Version 1.2</div>
       </div>
-      <div style="margin-top: 20px;">
-          <h3>Somes game I made while learning Unity</h3>
+      <div style="margin-top: 20px;">          
           <p>Just for fun and learning purpose</p>
       </div>
       <div style="margin-top: 20px;">
@@ -37,5 +35,11 @@
           <p>Yeah, very simple</p>
       </div>
     </div>
+
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/web build.json", {onProgress: UnityProgress});
+    </script>
   </body>
 </html>
