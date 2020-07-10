@@ -1,8 +1,8 @@
 ﻿
-var inputs = document.forms["form_register"].getElementsByTagName('input');
+var inputs = document.forms["form_input"].getElementsByTagName('input');
 var run_onchange = false;
 
-function valid_register() {
+function valid_input() {
     var errors = false;
     var valid_mail = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
 
@@ -19,19 +19,9 @@ function valid_register() {
         } else {
             if (id == 'email') {
                 if (valid_mail.test(value) == false) { span.innerHTML = "Invalid Email"; }
-                var email = value;
-            }
-            if (id == 'password') {
-                if (value.length < 6) { span.innerHTML = "At least 6 characters"; }
-                var pass = value;
-            }
-            if (id == 'phonenumb') {
-                if (isNaN(value) == true)
-                { span.innerHTML = "Must be number"; }
-                var phoneN = value;
+                var email_alert = value;
             }
             if (id == 'name') { var name_alert = value; }
-            if (id == 'accountname') { var accountname_alert = value; }
         }
 
         if (span.innerHTML != '') {
@@ -42,21 +32,20 @@ function valid_register() {
         }
     } //end for
 
+    console.log("ngoài for" + $("#message").val())
     if (errors == false) {
-        alert('REGISTER SUCCESSFUL!'
+        alert('I got your message!'
             + '\n\n'
             + 'Name:  ' + name_alert + '\n'
-            + 'Email:  ' + email + '\n'
-            + 'Account name:  ' + accountname_alert + '\n'
-            + 'Password:  ' + pass + '\n'
-            + 'Phone number:  ' + phoneN);
+            + 'Email:  ' + email_alert + '\n'
+            + 'Message:  ' + $("#message").val());
     }
     return !errors;
 } // end function
 
-var register = document.getElementById('submit');
-register.onclick = function () {
-    return valid_register();
+var submitForm = document.getElementById('submit');
+submitForm.onclick = function () {
+    return valid_input();
 }
 
 for (var i = 0; i < inputs.length; i++) {
@@ -65,7 +54,7 @@ for (var i = 0; i < inputs.length; i++) {
         if (run_onchange == true) {
             this.style.border = '1px solid #999';
             this.style.background = '#fff';
-            valid_register();
+            valid_input();
         }
     }
 }
