@@ -5,7 +5,7 @@ Build from a free template as I learnt web development, just basic stuff
 
 ###
 Some simple games I made with Unity 
-Play test [here]()  
+Play test [here](https://januadrym.github.io/1st-web/index.html)
 
 ### What I learned
  * HTML/CSS
